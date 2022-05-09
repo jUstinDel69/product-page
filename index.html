@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href=".images/favicon-32x32.png">
+
+  <title></title>
+  <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="flex">
+      <div class="logo">
+        <img src="images/logo.svg" alt="Logo" id="logo">
+      </div>
+      <nav>
+        <ul>
+          <li>Collections</li>
+          <li>Men</li>
+          <li>Women</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </div>
+    <div class="user flex">
+      <div class="fb-10">
+        <div class="cardBtn">
+          <div class="ert">
+            <span class="nbr" id="nbr_cart">0</span>
+            <img src="images/icon-cart.svg" alt="">
+          </div>
+          <div class="cart">
+            <h3>Cart</h3>
+            <div id="cartContainer">
+              <div class="product">
+                Your cart is empty
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fb-20">
+        <div id="avatar">
+          <img src="images/image-avatar.png" alt="">
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="flex">
+    <div class="fb-50 img_product">
+      <div>
+        <img src="images/image-product-1.jpg" alt="" id="no_popup_first_img">
+      </div>
+      <div>
+        <div class="flex">
+          <div onclick="page_product.popup()">
+            <img src="images/image-product-1.jpg" alt="">
+          </div>
+          <div onclick="page_product.popup()">
+            <img src="images/image-product-2.jpg" alt="">
+          </div>
+          <div onclick="page_product.popup()">
+            <img src="images/image-product-3.jpg" alt="">
+          </div>
+          <div onclick="page_product.popup()">
+            <img src="images/image-product-4.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fb-50 description_product">
+      <h3>
+        Sneaker Company
+      </h3>
+      <h2 id="titleProduct">
+
+      </h2>
+      <p id="descriptionProduct">
+
+      </p>
+
+      <div>
+        <span class="price" id="price">
+          $125.00
+        </span>
+        <span class="reduction">50%</span>
+      </div>
+      </h4>
+      <span class="barre" id="promo">
+        $250.00
+      </span>
+
+      <div class="flex">
+        <div class="fb-50 flex">
+          <button class="nbr" id="moins">-</button>
+          <span id="nbrProduct">0</span>
+          <button class="nbr" id="plus">+</button>
+        </div>
+        <div class="fb-50">
+          <button class="cartButton" id="cartButton">
+            <div class="fb-10">
+              <img src="images/icon-cart.svg" alt="">
+            </div>
+            <div class="fb-50">
+              Add to cart
+            </div>
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="popup-img-product popup-actif" id="popup">
+      <div class="cross" onclick="page_product.popup()">
+        🗙
+      </div>
+      <div class="img_product">
+        <div>
+          <div class="first_image">
+            <img src="images/image-product-1.jpg" alt="">
+            <div class="flex ctrl">
+              <div>
+                <img src="images/icon-next.svg" alt="Before" class="slideBtn left">
+              </div>
+              <div>
+                <img src="images/icon-next.svg" alt="Before" class="slideBtn">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="flex">
+            <div>
+              <img src="images/image-product-1.jpg" alt="" onclick="changeImg()">
+            </div>
+            <div>
+              <img src="images/image-product-2.jpg" alt="">
+            </div>
+            <div>
+              <img src="images/image-product-3.jpg" alt="">
+            </div>
+            <div>
+              <img src="images/image-product-4.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
