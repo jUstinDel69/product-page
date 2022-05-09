@@ -274,3 +274,10 @@ button {
     padding: 0.5em;
     border-radius: 7px;
 }
+.listProduct {
+    flex-wrap: wrap;
+}
+.listProduct > div {
+    max-width: 30%;
+    text-align: center;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href=".images/favicon-32x32.png">
+
+    <title></title>
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="flex">
+            <div class="logo">
+                <img src="images/logo.svg" alt="Logo" id="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li>Collections</li>
+                    <li>Men</li>
+                    <li>Women</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="user flex">
+            <div class="fb-10">
+                <div class="cardBtn">
+                    <div class="ert">
+                        <span class="nbr" id="nbr_cart">0</span>
+                        <img src="images/icon-cart.svg" alt="">
+                    </div>
+                    <div class="cart">
+                        <h3>Cart</h3>
+                        <div id="cartContainer">
+                            <div class="product">
+                                Your cart is empty
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fb-20">
+                <div id="avatar">
+                    <img src="images/image-avatar.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="flex listProduct" id="listProduct">
+
+        </div>
+    </main>
+    <script src="js/collections.js"></script>
+</body>
+
+</html>

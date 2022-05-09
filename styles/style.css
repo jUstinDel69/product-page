@@ -402,4 +402,14 @@ button {
   padding: 0.5em;
   border-radius: 7px;
 }
+
+.listProduct {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.listProduct > div {
+  max-width: 30%;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
